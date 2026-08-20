@@ -24,7 +24,10 @@ npm start
 The server will run on `http://localhost:5000`.
 
 ## 4. MongoDB Setup
-(To be implemented in Task 5)
+The backend uses MongoDB for data persistence, connected via Mongoose.
+- The application connects to the database using the `MONGO_URI` specified in the `.env` file.
+- The database contains three collections: `books`, `members`, and `borrowings` based on the defined Mongoose schemas.
+- If the database does not exist locally, Mongoose will automatically create it upon the first insert.
 
 ## 5. Required Environment Variables
 A `.env.example` file is provided. You need to create a `.env` file in the root directory with the following variables:
