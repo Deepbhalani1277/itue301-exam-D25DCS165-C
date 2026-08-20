@@ -1,13 +1,14 @@
-// Navbar — navigation component with links to all pages
-// Links are plain anchors for now, will switch to React Router in Task 2
+import { Link } from 'react-router-dom'
+
+// Navbar — navigation component with links to all pages using React Router
 function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-brand">📚 LibraryMS</div>
       <ul className="navbar-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#books">Books</a></li>
-        <li><a href="#borrow">Borrow</a></li>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/books">Books</Link></li>
+        <li><Link to="/borrow">Borrow</Link></li>
       </ul>
     </nav>
   )
